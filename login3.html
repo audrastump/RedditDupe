@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="homepage.css"> 
+        <title>News Sharing Site</title>
+    </head>
+    <body> <div id = "main">
+        <h1>Welcome to the news sharing site</h1>
+        <h2>Please enter your username and password</h2>
+       <!--Getting the login info , which is required-->
+            <form name = "input" action=login3.php method="POST">
+                <label>Enter your username: </label> <input type="text" name="username"  id="username" required/>
+                <label>Enter your password: </label> <input type="password" name="password"  id="password" required/>
+                <input type = "submit" value = "login">
+            </form>
+       <!--Allowing the user to register if necessary-->
+            <br>
+            <form class="loginform" action="newuser3.php" method="POST">
+                <label> Create a new username: </label>
+                <input type="text" name="newuser" required>
+                <label> Create a new password: </label>
+                <input type="password" name="newpassword" required>
+                <input type='submit' value='Sign Up'>
+            </form>
+    </div>
+    </body>
+</html>
+
+
